@@ -26,6 +26,7 @@
     
     UIView *snapView = [cell.imageView snapshotViewAfterScreenUpdates:NO];
     snapView.frame = [containerView convertRect:cell.imageView.frame fromView:cell.imageView.superview];
+    UIImage *snapImage = cell.imageView.image.copy;
     cell.imageView.hidden = YES;
     
     toViewController.view.frame = [transitionContext finalFrameForViewController:toViewController];
@@ -39,14 +40,15 @@
                      animations:^{
                          [containerView layoutIfNeeded];
                          toViewController.view.alpha = 1.0;
-                         snapView.frame = [containerView convertRect:toViewController.detailImageView.frame
-                                                            fromView:toViewController.detailImageView.superview];
+                         snapView.frame = [containerView convertRect:toViewController.view.frame
+                                                            fromView:toViewController.view.superview];
                      }
                      completion:^(BOOL finished) {
                          toViewController.detailImageView.hidden = NO;
                          cell.imageView.hidden = NO;
                          [snapView removeFromSuperview];
-                         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];                         
+                         toViewController.detailImageView.image = snapImage;
+                         [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
                      }];
     
 }

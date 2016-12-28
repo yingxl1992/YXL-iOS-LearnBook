@@ -17,8 +17,17 @@
 		E265BC661E1360A100CFDF85 /* YXLShowDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC651E1360A100CFDF85 /* YXLShowDetailViewController.m */; };
 		E265BC6A1E1362BE00CFDF85 /* YXLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC681E1362BE00CFDF85 /* YXLCollectionViewCell.m */; };
 		E265BC6B1E1362BE00CFDF85 /* YXLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E265BC691E1362BE00CFDF85 /* YXLCollectionViewCell.xib */; };
-		E265BC721E1364B000CFDF85 /* transitionAnimation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */; };
 		E265BC751E13AAF700CFDF85 /* YXLDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC741E13AAF700CFDF85 /* YXLDismissTransition.m */; };
+		E265BC801E13C60C00CFDF85 /* transitionAnimation00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC761E13C60C00CFDF85 /* transitionAnimation00.jpg */; };
+		E265BC811E13C60C00CFDF85 /* transitionAnimation01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC771E13C60C00CFDF85 /* transitionAnimation01.jpg */; };
+		E265BC821E13C60C00CFDF85 /* transitionAnimation02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC781E13C60C00CFDF85 /* transitionAnimation02.jpg */; };
+		E265BC831E13C60C00CFDF85 /* transitionAnimation03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC791E13C60C00CFDF85 /* transitionAnimation03.jpg */; };
+		E265BC841E13C60C00CFDF85 /* transitionAnimation04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7A1E13C60C00CFDF85 /* transitionAnimation04.jpg */; };
+		E265BC851E13C60C00CFDF85 /* transitionAnimation05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7B1E13C60C00CFDF85 /* transitionAnimation05.jpg */; };
+		E265BC861E13C60C00CFDF85 /* transitionAnimation06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7C1E13C60C00CFDF85 /* transitionAnimation06.jpg */; };
+		E265BC871E13C60C00CFDF85 /* transitionAnimation07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7D1E13C60C00CFDF85 /* transitionAnimation07.jpg */; };
+		E265BC881E13C60C00CFDF85 /* transitionAnimation08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7E1E13C60C00CFDF85 /* transitionAnimation08.jpg */; };
+		E265BC891E13C60C00CFDF85 /* transitionAnimation09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC7F1E13C60C00CFDF85 /* transitionAnimation09.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +48,18 @@
 		E265BC671E1362BE00CFDF85 /* YXLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLCollectionViewCell.h; sourceTree = "<group>"; };
 		E265BC681E1362BE00CFDF85 /* YXLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLCollectionViewCell.m; sourceTree = "<group>"; };
 		E265BC691E1362BE00CFDF85 /* YXLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXLCollectionViewCell.xib; sourceTree = "<group>"; };
-		E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation.jpg; sourceTree = "<group>"; };
 		E265BC731E13AAF700CFDF85 /* YXLDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLDismissTransition.h; sourceTree = "<group>"; };
 		E265BC741E13AAF700CFDF85 /* YXLDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLDismissTransition.m; sourceTree = "<group>"; };
+		E265BC761E13C60C00CFDF85 /* transitionAnimation00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation00.jpg; sourceTree = "<group>"; };
+		E265BC771E13C60C00CFDF85 /* transitionAnimation01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation01.jpg; sourceTree = "<group>"; };
+		E265BC781E13C60C00CFDF85 /* transitionAnimation02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation02.jpg; sourceTree = "<group>"; };
+		E265BC791E13C60C00CFDF85 /* transitionAnimation03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation03.jpg; sourceTree = "<group>"; };
+		E265BC7A1E13C60C00CFDF85 /* transitionAnimation04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation04.jpg; sourceTree = "<group>"; };
+		E265BC7B1E13C60C00CFDF85 /* transitionAnimation05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation05.jpg; sourceTree = "<group>"; };
+		E265BC7C1E13C60C00CFDF85 /* transitionAnimation06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation06.jpg; sourceTree = "<group>"; };
+		E265BC7D1E13C60C00CFDF85 /* transitionAnimation07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation07.jpg; sourceTree = "<group>"; };
+		E265BC7E1E13C60C00CFDF85 /* transitionAnimation08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation08.jpg; sourceTree = "<group>"; };
+		E265BC7F1E13C60C00CFDF85 /* transitionAnimation09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation09.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +126,16 @@
 		E265BC6E1E13645400CFDF85 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */,
+				E265BC761E13C60C00CFDF85 /* transitionAnimation00.jpg */,
+				E265BC771E13C60C00CFDF85 /* transitionAnimation01.jpg */,
+				E265BC781E13C60C00CFDF85 /* transitionAnimation02.jpg */,
+				E265BC791E13C60C00CFDF85 /* transitionAnimation03.jpg */,
+				E265BC7A1E13C60C00CFDF85 /* transitionAnimation04.jpg */,
+				E265BC7B1E13C60C00CFDF85 /* transitionAnimation05.jpg */,
+				E265BC7C1E13C60C00CFDF85 /* transitionAnimation06.jpg */,
+				E265BC7D1E13C60C00CFDF85 /* transitionAnimation07.jpg */,
+				E265BC7E1E13C60C00CFDF85 /* transitionAnimation08.jpg */,
+				E265BC7F1E13C60C00CFDF85 /* transitionAnimation09.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,10 +198,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E265BC861E13C60C00CFDF85 /* transitionAnimation06.jpg in Resources */,
 				E265BC6B1E1362BE00CFDF85 /* YXLCollectionViewCell.xib in Resources */,
-				E265BC721E1364B000CFDF85 /* transitionAnimation.jpg in Resources */,
+				E265BC891E13C60C00CFDF85 /* transitionAnimation09.jpg in Resources */,
+				E265BC841E13C60C00CFDF85 /* transitionAnimation04.jpg in Resources */,
+				E265BC801E13C60C00CFDF85 /* transitionAnimation00.jpg in Resources */,
+				E265BC821E13C60C00CFDF85 /* transitionAnimation02.jpg in Resources */,
+				E265BC881E13C60C00CFDF85 /* transitionAnimation08.jpg in Resources */,
 				E265BC571E1359DE00CFDF85 /* LaunchScreen.storyboard in Resources */,
 				E265BC541E1359DE00CFDF85 /* Assets.xcassets in Resources */,
+				E265BC851E13C60C00CFDF85 /* transitionAnimation05.jpg in Resources */,
+				E265BC811E13C60C00CFDF85 /* transitionAnimation01.jpg in Resources */,
+				E265BC831E13C60C00CFDF85 /* transitionAnimation03.jpg in Resources */,
+				E265BC871E13C60C00CFDF85 /* transitionAnimation07.jpg in Resources */,
 				E265BC521E1359DE00CFDF85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +385,7 @@
 				E265BC5D1E1359DE00CFDF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

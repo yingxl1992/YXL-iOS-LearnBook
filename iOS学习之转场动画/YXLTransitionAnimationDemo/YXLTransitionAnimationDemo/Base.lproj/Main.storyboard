@@ -58,7 +58,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transitionAnimation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="M78-CG-pfc"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M78-CG-pfc"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3C-07-lTx">
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -69,10 +69,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z3C-07-lTx" firstAttribute="centerX" secondItem="4oJ-0w-lGt" secondAttribute="centerX" id="1Lw-j9-q0D"/>
-                            <constraint firstItem="M78-CG-pfc" firstAttribute="leading" secondItem="4oJ-0w-lGt" secondAttribute="leading" constant="10" id="4eN-cN-MSz"/>
-                            <constraint firstItem="M78-CG-pfc" firstAttribute="top" secondItem="tGj-P0-pWd" secondAttribute="bottom" constant="10" id="7E0-OO-ShP"/>
-                            <constraint firstItem="yb9-Ae-tNR" firstAttribute="top" secondItem="M78-CG-pfc" secondAttribute="bottom" constant="10" id="Vzx-M9-5N5"/>
-                            <constraint firstAttribute="trailing" secondItem="M78-CG-pfc" secondAttribute="trailing" constant="10" id="WCh-Hh-5vd"/>
+                            <constraint firstItem="M78-CG-pfc" firstAttribute="leading" secondItem="4oJ-0w-lGt" secondAttribute="leading" id="4eN-cN-MSz"/>
+                            <constraint firstItem="M78-CG-pfc" firstAttribute="top" secondItem="tGj-P0-pWd" secondAttribute="bottom" id="7E0-OO-ShP"/>
+                            <constraint firstItem="yb9-Ae-tNR" firstAttribute="top" secondItem="M78-CG-pfc" secondAttribute="bottom" id="Vzx-M9-5N5"/>
+                            <constraint firstAttribute="trailing" secondItem="M78-CG-pfc" secondAttribute="trailing" id="WCh-Hh-5vd"/>
                             <constraint firstItem="yb9-Ae-tNR" firstAttribute="top" secondItem="Z3C-07-lTx" secondAttribute="bottom" constant="50" id="rJ8-Ze-hkc"/>
                         </constraints>
                     </view>
@@ -103,7 +103,4 @@
             <point key="canvasLocation" x="1148" y="-203.74812593703149"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="transitionAnimation.jpg" width="200" height="200"/>
-    </resources>
 </document>

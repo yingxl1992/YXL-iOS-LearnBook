@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transitionAnimation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CPo-Jm-B7d"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPo-Jm-B7d"/>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-r7-raW">
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="8qt-uO-3Nw"/>
@@ -40,7 +40,4 @@
             </connections>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="transitionAnimation.jpg" width="200" height="200"/>
-    </resources>
 </document>

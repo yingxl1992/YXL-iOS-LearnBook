@@ -20,6 +20,8 @@ UICollectionViewDataSource,
 UINavigationControllerDelegate
 >
 
+@property (nonatomic, strong) NSArray *imageArray;
+
 @end
 
 @implementation ViewController
@@ -38,6 +40,19 @@ UINavigationControllerDelegate
     self.mainCollectionView.dataSource = self;
     [self.mainCollectionView registerNib:[UINib nibWithNibName:@"YXLCollectionViewCell" bundle:nil]
               forCellWithReuseIdentifier:@"YXLCollectionViewCell"];
+    
+    NSMutableArray *tmpImageArray = [NSMutableArray arrayWithCapacity:10];
+    for (NSInteger i = 0; i < 10; i++) {
+        NSString *image = [[NSString alloc] initWithFormat:@"transitionAnimation0%ld.jpg", i];
+        [tmpImageArray addObject:image];
+    }
+    self.imageArray = tmpImageArray.copy;
+    
+    [self.mainCollectionView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -56,6 +71,7 @@ UINavigationControllerDelegate
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     YXLCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"YXLCollectionViewCell"
                                                                             forIndexPath:indexPath];
+    cell.imageView.image = [UIImage imageNamed:self.imageArray[indexPath.item]];
     return cell;
 }
 
