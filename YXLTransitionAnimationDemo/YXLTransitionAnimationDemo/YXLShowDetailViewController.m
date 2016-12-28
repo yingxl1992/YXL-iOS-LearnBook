@@ -1,0 +1,43 @@
+//
+//  YXLShowDetailViewController.m
+//  YXLTransitionAnimationDemo
+//
+//  Created by yingxl1992 on 16/12/28.
+//  Copyright © 2016年 yingxl1992. All rights reserved.
+//
+
+#import "YXLShowDetailViewController.h"
+
+@interface YXLShowDetailViewController ()
+
+@end
+
+@implementation YXLShowDetailViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)popToPreView:(id)sender {
+//    [self dismissViewControllerAnimated:YES
+//                             completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

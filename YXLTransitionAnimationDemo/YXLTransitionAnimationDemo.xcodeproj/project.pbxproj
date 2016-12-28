@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E265BC491E1359DE00CFDF85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC481E1359DE00CFDF85 /* main.m */; };
+		E265BC4C1E1359DE00CFDF85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC4B1E1359DE00CFDF85 /* AppDelegate.m */; };
+		E265BC4F1E1359DE00CFDF85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC4E1E1359DE00CFDF85 /* ViewController.m */; };
+		E265BC521E1359DE00CFDF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E265BC501E1359DE00CFDF85 /* Main.storyboard */; };
+		E265BC541E1359DE00CFDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E265BC531E1359DE00CFDF85 /* Assets.xcassets */; };
+		E265BC571E1359DE00CFDF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E265BC551E1359DE00CFDF85 /* LaunchScreen.storyboard */; };
+		E265BC631E135E4800CFDF85 /* YXLMagicMoveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC621E135E4800CFDF85 /* YXLMagicMoveTransition.m */; };
+		E265BC661E1360A100CFDF85 /* YXLShowDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC651E1360A100CFDF85 /* YXLShowDetailViewController.m */; };
+		E265BC6A1E1362BE00CFDF85 /* YXLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC681E1362BE00CFDF85 /* YXLCollectionViewCell.m */; };
+		E265BC6B1E1362BE00CFDF85 /* YXLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E265BC691E1362BE00CFDF85 /* YXLCollectionViewCell.xib */; };
+		E265BC721E1364B000CFDF85 /* transitionAnimation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */; };
+		E265BC751E13AAF700CFDF85 /* YXLDismissTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E265BC741E13AAF700CFDF85 /* YXLDismissTransition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E265BC441E1359DE00CFDF85 /* YXLTransitionAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXLTransitionAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E265BC481E1359DE00CFDF85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E265BC4A1E1359DE00CFDF85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E265BC4B1E1359DE00CFDF85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E265BC4D1E1359DE00CFDF85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E265BC4E1E1359DE00CFDF85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E265BC511E1359DE00CFDF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E265BC531E1359DE00CFDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E265BC561E1359DE00CFDF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E265BC581E1359DE00CFDF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E265BC611E135E4800CFDF85 /* YXLMagicMoveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLMagicMoveTransition.h; sourceTree = "<group>"; };
+		E265BC621E135E4800CFDF85 /* YXLMagicMoveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLMagicMoveTransition.m; sourceTree = "<group>"; };
+		E265BC641E1360A100CFDF85 /* YXLShowDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLShowDetailViewController.h; sourceTree = "<group>"; };
+		E265BC651E1360A100CFDF85 /* YXLShowDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLShowDetailViewController.m; sourceTree = "<group>"; };
+		E265BC671E1362BE00CFDF85 /* YXLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLCollectionViewCell.h; sourceTree = "<group>"; };
+		E265BC681E1362BE00CFDF85 /* YXLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLCollectionViewCell.m; sourceTree = "<group>"; };
+		E265BC691E1362BE00CFDF85 /* YXLCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXLCollectionViewCell.xib; sourceTree = "<group>"; };
+		E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transitionAnimation.jpg; sourceTree = "<group>"; };
+		E265BC731E13AAF700CFDF85 /* YXLDismissTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLDismissTransition.h; sourceTree = "<group>"; };
+		E265BC741E13AAF700CFDF85 /* YXLDismissTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLDismissTransition.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E265BC411E1359DE00CFDF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E265BC3B1E1359DE00CFDF85 = {
+			isa = PBXGroup;
+			children = (
+				E265BC461E1359DE00CFDF85 /* YXLTransitionAnimationDemo */,
+				E265BC451E1359DE00CFDF85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E265BC451E1359DE00CFDF85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E265BC441E1359DE00CFDF85 /* YXLTransitionAnimationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E265BC461E1359DE00CFDF85 /* YXLTransitionAnimationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E265BC6E1E13645400CFDF85 /* Resources */,
+				E265BC4A1E1359DE00CFDF85 /* AppDelegate.h */,
+				E265BC4B1E1359DE00CFDF85 /* AppDelegate.m */,
+				E265BC4D1E1359DE00CFDF85 /* ViewController.h */,
+				E265BC4E1E1359DE00CFDF85 /* ViewController.m */,
+				E265BC501E1359DE00CFDF85 /* Main.storyboard */,
+				E265BC531E1359DE00CFDF85 /* Assets.xcassets */,
+				E265BC551E1359DE00CFDF85 /* LaunchScreen.storyboard */,
+				E265BC581E1359DE00CFDF85 /* Info.plist */,
+				E265BC471E1359DE00CFDF85 /* Supporting Files */,
+				E265BC611E135E4800CFDF85 /* YXLMagicMoveTransition.h */,
+				E265BC621E135E4800CFDF85 /* YXLMagicMoveTransition.m */,
+				E265BC641E1360A100CFDF85 /* YXLShowDetailViewController.h */,
+				E265BC651E1360A100CFDF85 /* YXLShowDetailViewController.m */,
+				E265BC671E1362BE00CFDF85 /* YXLCollectionViewCell.h */,
+				E265BC681E1362BE00CFDF85 /* YXLCollectionViewCell.m */,
+				E265BC691E1362BE00CFDF85 /* YXLCollectionViewCell.xib */,
+				E265BC731E13AAF700CFDF85 /* YXLDismissTransition.h */,
+				E265BC741E13AAF700CFDF85 /* YXLDismissTransition.m */,
+			);
+			path = YXLTransitionAnimationDemo;
+			sourceTree = "<group>";
+		};
+		E265BC471E1359DE00CFDF85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E265BC481E1359DE00CFDF85 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E265BC6E1E13645400CFDF85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E265BC711E1364B000CFDF85 /* transitionAnimation.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E265BC431E1359DE00CFDF85 /* YXLTransitionAnimationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E265BC5B1E1359DE00CFDF85 /* Build configuration list for PBXNativeTarget "YXLTransitionAnimationDemo" */;
+			buildPhases = (
+				E265BC401E1359DE00CFDF85 /* Sources */,
+				E265BC411E1359DE00CFDF85 /* Frameworks */,
+				E265BC421E1359DE00CFDF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXLTransitionAnimationDemo;
+			productName = YXLTransitionAnimationDemo;
+			productReference = E265BC441E1359DE00CFDF85 /* YXLTransitionAnimationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E265BC3C1E1359DE00CFDF85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = yingxl1992;
+				TargetAttributes = {
+					E265BC431E1359DE00CFDF85 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E265BC3F1E1359DE00CFDF85 /* Build configuration list for PBXProject "YXLTransitionAnimationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E265BC3B1E1359DE00CFDF85;
+			productRefGroup = E265BC451E1359DE00CFDF85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E265BC431E1359DE00CFDF85 /* YXLTransitionAnimationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E265BC421E1359DE00CFDF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E265BC6B1E1362BE00CFDF85 /* YXLCollectionViewCell.xib in Resources */,
+				E265BC721E1364B000CFDF85 /* transitionAnimation.jpg in Resources */,
+				E265BC571E1359DE00CFDF85 /* LaunchScreen.storyboard in Resources */,
+				E265BC541E1359DE00CFDF85 /* Assets.xcassets in Resources */,
+				E265BC521E1359DE00CFDF85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E265BC401E1359DE00CFDF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E265BC4F1E1359DE00CFDF85 /* ViewController.m in Sources */,
+				E265BC751E13AAF700CFDF85 /* YXLDismissTransition.m in Sources */,
+				E265BC4C1E1359DE00CFDF85 /* AppDelegate.m in Sources */,
+				E265BC661E1360A100CFDF85 /* YXLShowDetailViewController.m in Sources */,
+				E265BC491E1359DE00CFDF85 /* main.m in Sources */,
+				E265BC6A1E1362BE00CFDF85 /* YXLCollectionViewCell.m in Sources */,
+				E265BC631E135E4800CFDF85 /* YXLMagicMoveTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E265BC501E1359DE00CFDF85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E265BC511E1359DE00CFDF85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E265BC551E1359DE00CFDF85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E265BC561E1359DE00CFDF85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E265BC591E1359DE00CFDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E265BC5A1E1359DE00CFDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E265BC5C1E1359DE00CFDF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YXLTransitionAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yingxiaoli.YXLTransitionAnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E265BC5D1E1359DE00CFDF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YXLTransitionAnimationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yingxiaoli.YXLTransitionAnimationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E265BC3F1E1359DE00CFDF85 /* Build configuration list for PBXProject "YXLTransitionAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E265BC591E1359DE00CFDF85 /* Debug */,
+				E265BC5A1E1359DE00CFDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E265BC5B1E1359DE00CFDF85 /* Build configuration list for PBXNativeTarget "YXLTransitionAnimationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E265BC5C1E1359DE00CFDF85 /* Debug */,
+				E265BC5D1E1359DE00CFDF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E265BC3C1E1359DE00CFDF85 /* Project object */;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YXLCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transitionAnimation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CPo-Jm-B7d"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-r7-raW">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="8qt-uO-3Nw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CPo-Jm-B7d" secondAttribute="trailing" id="Cz4-90-gw1"/>
+                <constraint firstItem="CPo-Jm-B7d" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Q8t-8E-7rB"/>
+                <constraint firstAttribute="bottom" secondItem="g8W-r7-raW" secondAttribute="bottom" id="ZhE-wi-Ixn"/>
+                <constraint firstItem="g8W-r7-raW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d4T-AC-Tgo"/>
+                <constraint firstItem="CPo-Jm-B7d" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dXb-vj-Ndw"/>
+                <constraint firstAttribute="trailing" secondItem="g8W-r7-raW" secondAttribute="trailing" id="x8G-vb-V8x"/>
+                <constraint firstAttribute="bottom" secondItem="CPo-Jm-B7d" secondAttribute="bottom" id="yIq-Ms-wBq"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="CPo-Jm-B7d" id="0qH-7J-bP5"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="transitionAnimation.jpg" width="200" height="200"/>
+    </resources>
+</document>
