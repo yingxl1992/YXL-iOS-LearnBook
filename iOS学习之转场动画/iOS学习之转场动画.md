@@ -1,4 +1,6 @@
-Demo地址：
+##iOS学习之转场动画
+
+
 ### Part1. UIViewController present UIViewController
 
 ####步骤及相关说明：
@@ -200,3 +202,6 @@ Demo地址：
                                                            toViewController:(UIViewController *)toVC`，而不是`- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented`和`- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed`;
                                                            
   - 将`self`设置为`navigationController.delegate`
+
+-
+2016-12-18 by YXL
