@@ -184,9 +184,9 @@
 
 ####涉及的协议小结
 
-1. `UIViewControllerAnimatedTransitioning`实现自定义转场动画
-2. `UIViewControllerContextTransitioning`提供转场上下文环境
-3. `UIViewControllerTransitioningDelegate`提供自定义的转场动画
+1. `UIViewControllerAnimatedTransitioning`实现自定义转场动画——**动画控制器(Animation Controller)**
+2. `UIViewControllerContextTransitioning`提供转场上下文环境——**转场环境(Transition Context)**
+3. `UIViewControllerTransitioningDelegate`提供自定义的转场动画——**转场代理(Transition Delegate)**
 
 ### Part2. UINavigationController控制转场
 ####步骤及相关说明
@@ -202,6 +202,60 @@
                                                            toViewController:(UIViewController *)toVC`，而不是`- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented`和`- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed`;
                                                            
   - 将`self`设置为`navigationController.delegate`
+
+####相关协议
+
+`UINavigationControllerDelegate`——与`UIViewControllerTransitioningDelegate`一样，属于**转场代理**
+
+### Part3. 交互式转场
+
+####步骤及相关说明
+
+1. 增加交互手势，一般为`UIScreenEdgePanGestureRecognizer`
+    
+    ```objective-c
+    
+    UIScreenEdgePanGestureRecognizer *edgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(edgePanned:)];
+    //设置滑动的方向
+    edgePanGestureRecognizer.edges = UIRectEdgeAll;
+    [self.view addGestureRecognizer:edgePanGestureRecognizer];
+    
+    ```
+
+2. 实现手势事件
+
+    ```objective-c
+    - (void)edgePanned:(UIScreenEdgePanGestureRecognizer *)gestureRecognizer {
+    	//计算滑动的百分比
+    	CGFloat progress = [gestureRecognizer translationInView:self.view].x / self.view.bounds.size.width;
+    progress = MIN(1.0, MAX(0.0, progress));
+    
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        //手势开始时，初始化UIPercentDrivenInteractiveTransition动画控制器
+        self.percentDrivenInteractiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else if (gestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        //手势滑动时，更新百分比
+        [self.percentDrivenInteractiveTransition updateInteractiveTransition:progress];
+    }
+    else if (gestureRecognizer.state == UIGestureRecognizerStateEnded
+             || gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
+        //处理手势结束或者取消的情况
+        if (progress > 0.5) {
+            [self.percentDrivenInteractiveTransition finishInteractiveTransition];
+        }
+        else {
+            [self.percentDrivenInteractiveTransition cancelInteractiveTransition];
+        }
+        self.percentDrivenInteractiveTransition = nil;
+    }
+}
+    
+    ```
+
+####相关协议
+
 
 -
 2016-12-18 by YXL

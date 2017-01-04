@@ -100,8 +100,7 @@ UINavigationControllerDelegate
     }
     else {
         
-        YXLDismissTransition *transition = [[YXLDismissTransition alloc] init];
-        return transition;
+        return nil;
     }
 }
 
