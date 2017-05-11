@@ -1,0 +1,55 @@
+##UIScrollView总结
+
+###UIScrollViewDelegate方法
+
+#### 滑动（Scroll）相关
+
+#####相关方法：
+  
+1. `- (void)scrollViewDidScroll:(UIScrollView *)scrollView;`
+    
+    any offset changes（任何偏移量的变化都会调用这个方法，即在UIScrollView滚动过程中，这个方法是会被多次被调用的）
+
+2. `- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;`
+
+    called on start of dragging (may require some time and or distance to move)(在开始滑动时调用)
+
+3. `- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset;`
+
+    called on finger up if the user dragged.(当用户停止滑动时调用)
+
+4. `- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;`
+    
+    called on finger up if the user dragged.(当用户停止滑动时调用；UIScrollView在用户停止滑动后是否继续滑动决定了这个方法被调用之后是否会继续调用方法1，即`scrollViewDidScroll`，`decelerate`参数就表示了UIScrollView是否会继续滑动)
+
+5. `- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView;`
+
+    return a yes if you want to scroll to the top. if not defined, assumes YES.（询问是否允许滚动到顶部，默认为YES）**这个方法会在点击状态栏，触发回到顶部事件时触发**
+
+6. `- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView;`
+
+    called when scrolling animation finished. may be called immediately if already at top.(当方法5`scrollViewShouldScrollToTop`返回YES，并且滚动到顶部时会触发这个方法)*文档中提到，已经在顶部时，可能会触发这个方法，在iOS10的模拟器上测试时，若已在顶部，点击状态栏时，并不会触发这个方法*
+
+7. `- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView;`
+
+    当用户停止拖拽，UIScrollView开始减速滑动时调用
+
+8. `- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView;`
+
+    当用户停止拖拽、UIScrollView减速滑动后停止时调用
+
+#####总结
+
+一个完整的滑动过程下，各方法的调用过程：
+
+![调用过程图](UIScrollView调用流程图.png)
+   
+####缩放(zoom)相关方法
+
+1. `- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView;`
+
+    return a view that will be scaled. if delegate returns nil, nothing happens.（返回允许被zoom的页面，若为nil则什么都不发生）
+    
+2. `- (void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view;`
+
+    
